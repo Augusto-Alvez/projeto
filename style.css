@@ -5,25 +5,26 @@
 }
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stoke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg)
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stoke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg)
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -70,17 +71,17 @@ body * {
 }
 .light #switch button {
   right: 0;
-  left:initial;
+  left: initial;
 }
 #switch span {
-display: block;
-width: 64px;
-height: 24px;
-background: var(--surface-color);
-border: 1px solid var(--stoke-color);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(4px);
-border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stoke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 ul {
   list-style: none;
@@ -137,4 +138,11 @@ footer {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
+}
+@media (min-width: 700px) {
+  :root{
+    --bg-url : url (./assets/bg-desktop.jpg);
+  }
+
+  
 }
