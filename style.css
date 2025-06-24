@@ -141,30 +141,29 @@ footer {
   font-weight: 400;
 }
 @media (min-width: 700px) {
-  :root{
-    --bg-url : url (./assets/bg-desktop.jpg);
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
-  :light {
-    --bg-url : url (./assets/bg-desktop-light.jpg);
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
-  
 }
 @keyframes slide-in {
-  from{
-  left: 0;  
+  from {
+    left: 0;
   }
 
   to {
-  left: 50%;  
+    left: 50%;
   }
 }
 @keyframes slide-back {
-  from{
-  left: 50%;  
+  from {
+    left: 50%;
   }
 
   to {
-  left: 0;  
+    left: 0;
   }
 }
