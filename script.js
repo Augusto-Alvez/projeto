@@ -5,17 +5,17 @@ function toggleMode () {
 
   const img = document.querySelector("#profile img")
   if(html.classList.contains("light")){
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "")
     img.setAttribute(
       "alt",
-      "Foto do maykebrito, usando óculos preto sorrindo de jaqueta cinza num fundo degradê ciano e rosa."
+      "Foto do Augusto, de óculos de sol e moletom azul num fundo branco."
     )
   }
   else {
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "")
     img.setAttribute(
       "alt",
-      "Foto do maykebrito, usando óculos sorrindo de camisa preta num fundo amarelo."
+      "Foto do Augusto, de moletom azul num fundo branco."
     )
   }
 }
